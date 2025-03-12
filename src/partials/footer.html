@@ -1,5 +1,81 @@
-<footer id="footer" class="mt-auto">
-123123
+<footer id="footer" class="mt-auto rounded-t-[114px] bg-[#262626]">
+    <div class="container flex items-center justify-between py-16 text-white">
+        <img src="img/logo-2.png" alt="" width="208" height="101" loading="lazy" />
+        <div class="text-[20px]">
+            <p class="mb-2">
+                Офис в Армавире: <br />
+                ул. Армавирская 124, каб. 182
+            </p>
+            <p>с 9:00 до 18:00, Пн-Пт</p>
+        </div>
+        <div class="text-[20px]">
+            <p class="mb-2">
+                Офис во Владивостоке: <br />
+                ул. Армавирская 543, каб. 776
+            </p>
+            <p>с 9:00 до 18:00, Пн-Пт</p>
+        </div>
+        <div>
+            <a href="tel:88004444746" class="text-[20px]">8 (800) 444-47-46</a>
+            <div class="mt-4 flex gap-4">
+                <a href="#">
+                    <svg class="icon-telegram size-11">
+                        <use href="#icon-telegram"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-ins size-11">
+                        <use href="#icon-ins"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-yt size-11">
+                        <use href="#icon-yt"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-r size-11">
+                        <use href="#icon-r"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <img src="img/vk.png" alt="" width="44" height="44" loading="lazy" />
+                </a>
+            </div>
+        </div>
+    </div>
 </footer>
+<div class="w-[920px] bg-white" style="display: none" id="callback">
+    <div class="mb-10 text-center text-4xl font-medium uppercase">Хочу такой же</div>
+    <form action="#">
+        <div class="mb-5">
+            <input type="text" placeholder="Ваше имя" class="form-input w-full" aria-label="" />
+        </div>
+        <div class="mb-5">
+            <input type="text" placeholder="Эл почта" class="form-input w-full" aria-label="" />
+        </div>
+        <div class="mb-5">
+            <input type="text" placeholder="Телефон" class="form-input w-full" aria-label="" />
+        </div>
+        <div class="mb-5">
+            <input type="text" placeholder="Город" class="form-input w-full" aria-label="" />
+        </div>
+        <div class="mb-5">
+            <textarea class="form-input h-[195px] w-full" placeholder="Комментарий" aria-label=""></textarea>
+        </div>
+        <div class="mb-6 flex items-center gap-2">
+            <input
+                type="checkbox"
+                id="rule"
+                class="form-checkbox size-8 rounded-lg border-black text-black focus:shadow-none focus:outline-0 focus:ring-0 focus:ring-offset-0"
+                name="rule"
+                checked
+            />
+            <label for="rule" class="cursor-pointer">Согласен (а) на обработку перональных даных </label>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-black">Отправить</button>
+        </div>
+    </form>
+</div>
 <script type="module" src="./js/common.js" defer></script>
-

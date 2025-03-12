@@ -8,8 +8,127 @@
 
 @layer base {
     body {
-        font-family: 'Roboto', system-ui;
+        font-family: 'Fira Sans', sans-serif;
         font-weight: 400;
         font-style: normal;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply relative inline-flex h-[76px] w-[344px] items-center justify-center gap-4 rounded-[38px] text-[20px] transition-all duration-300;
+
+        &.btn-outline-white {
+            @apply text-white outline outline-1 outline-white;
+
+            &:hover {
+                @apply bg-[#dadada] text-black outline-[#dadada];
+            }
+        }
+
+        &.btn-white {
+            @apply bg-white text-black;
+
+            &:hover {
+                @apply bg-[#dadada];
+            }
+        }
+
+        &.btn-black {
+            @apply bg-[#262626] text-white;
+
+            &:hover {
+                @apply bg-[#474747];
+            }
+        }
+
+        &[disabled] {
+            @apply pointer-events-none opacity-50;
+        }
+    }
+
+    .form-input,
+    .form-textarea {
+        @apply rounded-[43px] border-black px-12 py-7 leading-none text-black;
+    }
+}
+
+#header {
+    .menu {
+        ul {
+            @apply flex gap-12;
+
+            li {
+                &.current,
+                &:hover {
+                    a {
+                        @apply text-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#cta {
+    background: url('../img/bg-cta.png') no-repeat center center;
+    height: 662px;
+}
+
+.banner {
+    @apply flex flex-col justify-center ps-24 text-white;
+
+    &.banner-1 {
+        background: url('../img/bg-banner-1.png') no-repeat center center;
+        height: 450px;
+    }
+
+    &.banner-3 {
+        background: url('../img/bg-banner-3.png') no-repeat center center;
+        height: 449px;
+    }
+
+    &.banner-2 {
+        @apply flex-row items-center justify-between pr-14;
+        background: url('../img/bg-banner-2.png') no-repeat center center;
+        height: 216px;
+    }
+}
+
+.scroll-container {
+    overflow-x: auto;
+    display: flex;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 18px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #262626;
+    border-radius: 9px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #efefef;
+    border-radius: 9px;
+}
+
+.fancybox__content {
+    padding: 4rem !important;
+    border-radius: 73px !important;
+}
+
+.fancybox__content > .f-button.is-close-btn {
+    top: 2rem !important;
+    right: 2rem !important;
+    width: 44px;
+    height: 44px;
+
+    svg {
+        width: 44px;
+        height: 44px;
+        fill: #000 !important;
+        stroke: #000 !important;
     }
 }
