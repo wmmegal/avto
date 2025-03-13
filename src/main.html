@@ -11,37 +11,42 @@
     <body class="flex min-h-screen flex-col">
         <load ="partials/header.html" />
         <div id="cta" class="mb-10 xl:mb-20">
-            <div class="container pt-[120px] text-white">
-                <div class="mb-3 text-4xl font-bold uppercase">Подберем лучший авто</div>
-                <div class="mb-8 text-2xl uppercase">и доставим в РФ за 14 дней</div>
-                <ul class="space-y-4 pl-8">
+            <div class="container pt-20 text-white xl:pt-[120px]">
+                <div class="mb-3 text-xl font-bold uppercase xl:text-4xl">Подберем лучший авто</div>
+                <div class="mb-8 text-lg uppercase xl:text-2xl">и доставим в РФ за 14 дней</div>
+                <ul class="space-y-4 xl:pl-8">
                     <li class="flex items-center gap-3">
-                        <svg class="icon-tick h-[13px] w-[19px]">
+                        <svg class="icon-tick h-[13px] w-[19px] shrink-0">
                             <use href="#icon-tick"></use>
                         </svg>
-                        <span class="text-[20px]">Полное сопровождение</span>
+                        <span class="xl:text-[20px]">Полное сопровождение</span>
                     </li>
                     <li class="flex items-center gap-3">
-                        <svg class="icon-tick h-[13px] w-[19px]">
+                        <svg class="icon-tick h-[13px] w-[19px] shrink-0">
                             <use href="#icon-tick"></use>
                         </svg>
-                        <span class="text-[20px]"> Никаких скрытых платежей</span>
+                        <span class="xl:text-[20px]"> Никаких скрытых платежей</span>
                     </li>
                     <li class="flex items-center gap-3">
-                        <svg class="icon-tick h-[13px] w-[19px]">
+                        <svg class="icon-tick h-[13px] w-[19px] shrink-0">
                             <use href="#icon-tick"></use>
                         </svg>
-                        <span class="text-[20px]">Помощь с логистикой и растаможкой на территории РФ</span>
+                        <span class="xl:text-[20px]">Помощь с логистикой и растаможкой на территории РФ</span>
                     </li>
                 </ul>
-                <div class="mt-12 flex gap-6">
-                    <button type="button" class="btn btn-outline-white" data-fancybox data-src="#callback">
+                <div class="mt-12 flex flex-wrap gap-6">
+                    <button
+                        type="button"
+                        class="btn btn-outline-white w-full xl:w-auto"
+                        data-fancybox
+                        data-src="#callback"
+                    >
                         <span>Подобрать авто</span>
                         <svg class="icon-arr-right h-6 w-4">
                             <use href="#icon-arr-right"></use>
                         </svg>
                     </button>
-                    <a href="#" class="btn btn-white">
+                    <a href="#" class="btn btn-white w-full xl:w-auto">
                         Мы в Telegram
                         <svg class="icon-telegram absolute right-6 top-1/2 size-12 -translate-y-1/2">
                             <use href="#icon-telegram"></use>
@@ -50,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-10 grid grid-cols-3 gap-8 xl:mb-20">
+        <div class="container mb-10 grid grid-cols-1 gap-y-8 xl:mb-20 xl:grid-cols-3 xl:gap-8">
             <a href="#">
                 <figure class="relative">
                     <img src="img/flag-ge.png" alt="" width="466" height="256" class="w-full rounded-[58px]" />
@@ -83,11 +88,11 @@
             </a>
         </div>
         <div class="container mb-10 grid grid-cols-12 gap-8 xl:mb-20">
-            <figure class="order-1 col-span-7">
+            <figure class="col-span-12 xl:order-1 xl:col-span-7">
                 <img src="/img/img-driver.png" alt="" width="786" height="492" class="w-full rounded-[58px]" />
             </figure>
-            <div class="order-0 col-span-5">
-                <div class="mb-8 text-4xl uppercase">
+            <div class="xl:order-0 col-span-12 xl:col-span-5">
+                <div class="mb-8 text-xl uppercase xl:text-4xl">
                     <span class="text-primary">Компания</span> <br />
                     <b>Довгалев авто</b>
                 </div>
@@ -101,20 +106,25 @@
                         <b>Подберем / выкупим / доставим автомобиль</b> на территорию РФ и стран СНГ. Оформим полный
                         пакет документов для постановки на учет
                     </p>
-                    <a href="#" class="btn btn-black">Узнать больше</a>
+                    <a href="#" class="btn btn-black w-full xl:w-auto">Узнать больше</a>
                 </div>
             </div>
         </div>
         <div class="banner banner-1 container mb-10 xl:mb-20">
             <div>
-                <div class="mb-5 text-3xl font-bold uppercase">Доставка авто</div>
+                <div class="mb-5 text-xl font-bold uppercase xl:text-3xl">Доставка авто</div>
                 <p>
                     Мы заботимся о каждой детали логистики, чтобы <br />
                     ваш автомобиль достиг вас в кратчайшие сроки
                 </p>
-                <div class="mt-16 flex gap-6">
-                    <a href="#" class="btn btn-outline-white"> Подробнее </a>
-                    <button type="button" class="btn btn-outline-white" data-fancybox data-src="#callback">
+                <div class="mt-8 flex flex-wrap gap-6 xl:mt-16">
+                    <a href="#" class="btn btn-outline-white w-full xl:w-auto"> Подробнее </a>
+                    <button
+                        type="button"
+                        class="btn btn-outline-white w-full xl:w-auto"
+                        data-fancybox
+                        data-src="#callback"
+                    >
                         <span>Подобрать авто</span>
                         <svg class="icon-arr-right h-6 w-4">
                             <use href="#icon-arr-right"></use>
@@ -125,14 +135,14 @@
         </div>
         <div class="container mb-10 xl:mb-20">
             <div class="mb-6 text-center xl:mb-12">
-                <div class="mb-4 text-4xl uppercase">
+                <div class="mb-4 text-xl uppercase xl:text-4xl">
                     <span class="text-primary">Привезенные</span> <b>автомобили</b>
                 </div>
                 <p class="text-[23px]">Автомобили, которые мы привезли в прошлом месяце</p>
             </div>
             <div class="scroll-container pb-20">
                 <div class="flex gap-8">
-                    <div class="w-[426px] overflow-hidden rounded-[57px] border border-black bg-white">
+                    <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="img/img-card.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
                         </figure>
@@ -154,7 +164,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-[426px] overflow-hidden rounded-[57px] border border-black bg-white">
+                    <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="img/img-card.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
                         </figure>
@@ -176,7 +186,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-[426px] overflow-hidden rounded-[57px] border border-black bg-white">
+                    <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="img/img-card.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
                         </figure>
@@ -198,7 +208,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-[426px] overflow-hidden rounded-[57px] border border-black bg-white">
+                    <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="img/img-card.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
                         </figure>
@@ -220,7 +230,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-[426px] overflow-hidden rounded-[57px] border border-black bg-white">
+                    <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="img/img-card.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
                         </figure>
@@ -242,7 +252,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-[426px] overflow-hidden rounded-[57px] border border-black bg-white">
+                    <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="img/img-card.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
                         </figure>
@@ -264,7 +274,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="w-[426px] overflow-hidden rounded-[57px] border border-black bg-white">
+                    <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="img/img-card.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
                         </figure>
@@ -291,13 +301,13 @@
         </div>
         <div class="banner banner-2 container mb-10 xl:mb-20">
             <div>
-                <div class="mb-2 text-3xl font-bold uppercase">Подберем лучший авто</div>
-                <div class="text-2xl">Мы готовы вам в этом помочь!</div>
+                <div class="mb-2 text-xl font-bold uppercase xl:text-3xl">Подберем лучший авто</div>
+                <div class="text-lg xl:text-2xl">Мы готовы вам в этом помочь!</div>
             </div>
-            <div class="flex items-center gap-4">
-                <button type="button" class="btn btn-white" data-fancybox data-src="#callback">
-                    <span>Подобрать авто</span>
-                    <svg class="icon-arr-right h-6 w-4">
+            <div class="mt-8 flex basis-full items-center gap-4 xl:mt-0">
+                <button type="button" class="btn btn-white flex-auto" data-fancybox data-src="#callback">
+                    <span class="whitespace-nowrap">Подобрать авто</span>
+                    <svg class="icon-arr-right hidden h-6 w-4 xl:inline-block">
                         <use href="#icon-arr-right"></use>
                     </svg>
                 </button>
@@ -310,7 +320,7 @@
         </div>
         <div class="container mb-10 xl:mb-20">
             <div class="mb-6 text-center xl:mb-12">
-                <div class="mb-4 text-4xl uppercase">
+                <div class="mb-4 text-xl uppercase xl:text-4xl">
                     <span class="text-primary">Преимущества</span> <b>Сотрудничества с нами</b>
                 </div>
                 <p class="text-[23px]">Преимущества работы с нашей компанией</p>
@@ -328,7 +338,7 @@
                 ></iframe>
             </div>
         </div>
-        <div class="container mb-10 grid grid-cols-3 gap-10 xl:mb-20">
+        <div class="container mb-10 grid grid-cols-1 gap-10 xl:mb-20 xl:grid-cols-3">
             <ul class="space-y-5">
                 <li class="relative ps-10 text-[20px]">
                     <svg class="icon-tick absolute left-0 top-2 h-[13px] w-[19px]">
@@ -429,14 +439,19 @@
         </div>
         <div class="banner banner-3 container mb-10 xl:mb-20">
             <div>
-                <div class="mb-5 text-3xl font-bold uppercase">Доставка авто</div>
+                <div class="mb-5 text-xl font-bold uppercase xl:text-3xl">Доставка авто</div>
                 <p>
                     Мы заботимся о каждой детали логистики, чтобы <br />
                     ваш автомобиль достиг вас в кратчайшие сроки
                 </p>
-                <div class="mt-16 flex gap-6">
-                    <a href="#" class="btn btn-white"> Подробнее </a>
-                    <button type="button" class="btn btn-outline-white" data-fancybox data-src="#callback">
+                <div class="mt-8 flex flex-wrap gap-6 xl:mt-16">
+                    <a href="#" class="btn btn-white w-full xl:w-auto"> Подробнее </a>
+                    <button
+                        type="button"
+                        class="btn btn-outline-white w-full xl:w-auto"
+                        data-fancybox
+                        data-src="#callback"
+                    >
                         <span>Подобрать авто</span>
                         <svg class="icon-arr-right h-6 w-4">
                             <use href="#icon-arr-right"></use>

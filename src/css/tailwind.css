@@ -16,7 +16,7 @@
 
 @layer components {
     .btn {
-        @apply relative inline-flex h-[76px] w-[344px] items-center justify-center gap-4 rounded-[38px] text-[20px] transition-all duration-300;
+        @apply relative inline-flex h-[76px] items-center justify-center gap-4 rounded-[38px] px-8 text-[20px] transition-all duration-300 xl:w-[344px];
 
         &.btn-outline-white {
             @apply text-white outline outline-1 outline-white;
@@ -47,6 +47,52 @@
         }
     }
 
+    .btn-menu {
+        @apply mt-4 flex w-full items-center justify-center lg:hidden;
+
+        .icon-burger {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #000;
+            position: relative;
+            transition: 0.3s all;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 24px;
+                height: 2px;
+                background: #000;
+                transition: 0.3s all;
+            }
+
+            &:before {
+                transform: translateY(-8px);
+            }
+
+            &:after {
+                transform: translateY(8px);
+            }
+        }
+
+        &.active {
+            .icon-burger {
+                background: transparent;
+
+                &:before {
+                    transform: rotate(45deg);
+                }
+
+                &:after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
     .form-input,
     .form-textarea {
         @apply rounded-[43px] border-black px-12 py-7 leading-none text-black;
@@ -55,8 +101,10 @@
 
 #header {
     .menu {
+        @apply invisible max-h-0 overflow-hidden opacity-0 transition-all duration-300 lg:visible lg:max-h-none lg:text-lg lg:opacity-100 lg:transition-none;
+
         ul {
-            @apply flex gap-12;
+            @apply flex flex-col gap-4 text-center xl:flex-row xl:gap-12;
 
             li {
                 &.current,
@@ -67,6 +115,10 @@
                 }
             }
         }
+
+        &.open {
+            @apply visible mt-6 max-h-[1000px] text-lg opacity-100;
+        }
     }
 }
 
@@ -76,22 +128,32 @@
 }
 
 .banner {
-    @apply flex flex-col justify-center ps-24 text-white;
+    @apply flex flex-col justify-center p-8 text-white xl:ps-24;
 
     &.banner-1 {
-        background: url('../img/bg-banner-1.png') no-repeat center center;
-        height: 450px;
+        @apply xl:h-[450px];
+        background: #262626;
+
+        @media screen(md) {
+            background: url('../img/bg-banner-1.png') no-repeat center center;
+        }
     }
 
     &.banner-3 {
-        background: url('../img/bg-banner-3.png') no-repeat center center;
-        height: 449px;
+        @apply xl:h-[450px];
+        background: #262626;
+
+        @media screen(md) {
+            background: url('../img/bg-banner-3.png') no-repeat center center;
+        }
     }
 
     &.banner-2 {
-        @apply flex-row items-center justify-between pr-14;
-        background: url('../img/bg-banner-2.png') no-repeat center center;
-        height: 216px;
+        @apply flex-row flex-wrap items-center justify-between pr-14 xl:h-[216px];
+        background: #262626;
+        @media screen(xl) {
+            background: url('../img/bg-banner-2.png') no-repeat center center;
+        }
     }
 }
 

@@ -10,8 +10,8 @@ module.exports = {
             padding: '16px',
             screens: {
                 sm: '375px',
-                md: '575px',
-                lg: '767px',
+                md: '767px',
+                lg: '1140px',
                 xl: '1500px',
             },
         },
