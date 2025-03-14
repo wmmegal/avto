@@ -16,7 +16,7 @@
 
 @layer components {
     .btn {
-        @apply relative inline-flex h-[76px] items-center justify-center gap-4 rounded-[38px] px-8 text-[20px] transition-all duration-300 xl:w-[344px];
+        @apply relative inline-flex h-[76px] w-full items-center justify-center gap-4 rounded-[38px] px-8 text-[20px] transition-all duration-300 xl:w-[344px];
 
         &.btn-outline-white {
             @apply text-white outline outline-1 outline-white;
@@ -177,20 +177,173 @@
 }
 
 .fancybox__content {
-    padding: 4rem !important;
-    border-radius: 73px !important;
+    padding: 1rem !important;
+    border-radius: 16px !important;
+    @media screen(xl) {
+        padding: 4rem !important;
+        border-radius: 73px !important;
+    }
 }
 
 .fancybox__content > .f-button.is-close-btn {
-    top: 2rem !important;
-    right: 2rem !important;
+    top: 1rem !important;
+    right: 1rem !important;
+
     width: 44px;
     height: 44px;
+    background: none;
+
+    @media screen(xl) {
+        top: 2rem !important;
+        right: 2rem !important;
+    }
 
     svg {
         width: 44px;
         height: 44px;
         fill: #000 !important;
         stroke: #000 !important;
+    }
+}
+
+.path {
+    &.bg-about-us {
+        background: url('../img/bg-about-us.png') no-repeat center center;
+        height: 276px;
+    }
+
+    &.bg-germany {
+        background: url('../img/bg-germany.png') no-repeat center center;
+        height: 386px;
+    }
+
+    &.bg-japan {
+        background: url('../img/bg-japan.png') no-repeat center center;
+        height: 386px;
+    }
+}
+
+.prose {
+    h2,
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 0 0 0.75rem;
+
+        li {
+            @apply relative pl-6;
+
+            &:before {
+                content: '';
+                @apply absolute left-0 top-[8px] size-[11px] rounded-full bg-black;
+            }
+        }
+    }
+
+    p,
+    ul,
+    ol {
+        font-size: 18px;
+    }
+
+    ol {
+        list-style: none;
+        padding: 0;
+        counter-set: list;
+
+        li {
+            @apply relative block pl-14;
+
+            &:before {
+                counter-increment: list;
+                content: counter(list);
+                position: absolute;
+                left: 0;
+                top: -6px;
+                background: #000;
+                width: 43px;
+                height: 43px;
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                line-height: 43px;
+                border-radius: 50%;
+            }
+
+            & + li {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    img {
+        margin: 0;
+    }
+}
+
+.faq {
+    border: 1px solid #262626;
+    border-radius: 47px;
+    transition: 0.3s all;
+
+    .faq-question {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 1rem 3rem;
+        cursor: pointer;
+
+        @media screen(xl) {
+            font-size: 26px;
+            padding: 2rem 77px;
+        }
+
+        .icon-angle-right {
+            position: absolute;
+            top: 50%;
+            transition: 0.3s all;
+            right: 1.5rem;
+            transform: translateY(-50%) rotate(90deg);
+
+            @media screen(xl) {
+                right: 4rem;
+            }
+        }
+    }
+
+    .faq-answer {
+        font-weight: 500;
+        padding: 0 3rem;
+        font-size: 16px;
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+
+        @media screen(xl) {
+            font-size: 26px;
+            padding: 0 77px;
+        }
+    }
+
+    &.open {
+        color: #fff;
+        background-color: #262626;
+
+        .faq-question {
+            .icon-angle-right {
+                transform: translateY(-50%) rotate(-90deg);
+            }
+        }
+
+        .faq-answer {
+            padding-bottom: 2rem;
+            opacity: 1;
+            visibility: visible;
+            max-height: 1000px;
+        }
     }
 }

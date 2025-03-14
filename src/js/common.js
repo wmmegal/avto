@@ -30,3 +30,16 @@ document.addEventListener('change', (e) => {
 
     btn.disabled = !checkbox.checked;
 });
+
+document.addEventListener('click', (e) => {
+    const question = e.target.closest('.faq-question');
+
+    if (question == null) {
+        return;
+    }
+
+    const faq = question.closest('.faq'),
+        arr = question.querySelector('.icon-angle-right');
+
+    faq.classList.toggle('open');
+});
