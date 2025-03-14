@@ -221,6 +221,11 @@
         background: url('../img/bg-japan.png') no-repeat center center;
         height: 386px;
     }
+
+    &.bg-korea {
+        background: url('../img/bg-korea.png') no-repeat center center;
+        height: 386px;
+    }
 }
 
 .prose {
