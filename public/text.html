@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       <script type="module" crossorigin src="./assets/js/common-c8b1fa17.js"></script>
-      <link rel="stylesheet" href="./assets/css/common-cf2d0bcf.css">
+      <link rel="stylesheet" href="./assets/css/common-4b1f101d.css">
     </head>
     <body class="flex min-h-screen flex-col">
         <header id="header">
@@ -27,16 +27,16 @@
                 </ul>
             </div>
         </div>
-        <div class="flex items-center gap-6">
-            <a href="tel:88004444746">8 (800) <b>444-47-46</b></a>
+        <div class="flex items-center gap-2 xl:gap-6">
+            <a href="tel:88004444746" class="text-xl">8 (800) <b>444-47-46</b></a>
             <div class="flex items-center gap-2">
                 <a href="#">
-                    <svg class="icon-telegram size-12">
+                    <svg class="icon-telegram size-8 xl:size-12">
                         <use href="#icon-telegram"></use>
                     </svg>
                 </a>
                 <a href="#">
-                    <svg class="icon-whatsapp size-12">
+                    <svg class="icon-whatsapp size-8 xl:size-12">
                         <use href="#icon-whatsapp"></use>
                     </svg>
                 </a>
@@ -223,10 +223,21 @@
                             <use href="#icon-angle-right"></use>
                         </svg>
                     </div>
-                    <div class="faq-answer">
-                        Мы гарантируем соответствие автомобиля заявленным характеристикам. Если возникнут проблемы,
-                        связанные с нашей ошибкой (например, скрытые дефекты, о которых не было сообщено), мы предложим
-                        варианты решения: возврат, обмен или компенсацию, в зависимости от ситуации
+                    <div class="faq-answer space-y-6">
+                        <p>
+                            Мы гарантируем соответствие автомобиля заявленным характеристикам. Если возникнут проблемы,
+                            связанные с нашей ошибкой (например, скрытые дефекты, о которых не было сообщено), мы
+                            предложим варианты решения: возврат, обмен или компенсацию, в зависимости от ситуации
+                        </p>
+                        <iframe
+                            src="https://www.youtube.com/embed/LbSCNREFunk?si=rRj5TZR1qrCtFp_X"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            class="aspect-video w-full xl:rounded-[69px]"
+                        ></iframe>
                     </div>
                 </div>
                 <div class="faq">
@@ -320,7 +331,7 @@
     </div>
 </footer>
 <div class="w-[920px] bg-white" style="display: none" id="callback">
-    <div class="mb-10 text-center text-4xl font-medium uppercase">Хочу такой же</div>
+    <div class="mb-10 text-center text-xl font-medium uppercase xl:text-4xl">Хочу такой же</div>
     <form action="#">
         <div class="mb-5">
             <input type="text" placeholder="Ваше имя" class="form-input w-full" aria-label="" />

@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       <script type="module" crossorigin src="./assets/js/common-c8b1fa17.js"></script>
-      <link rel="stylesheet" href="./assets/css/common-cf2d0bcf.css">
+      <link rel="stylesheet" href="./assets/css/common-4b1f101d.css">
     </head>
     <body class="flex min-h-screen flex-col">
         <header id="header">
@@ -27,16 +27,16 @@
                 </ul>
             </div>
         </div>
-        <div class="flex items-center gap-6">
-            <a href="tel:88004444746">8 (800) <b>444-47-46</b></a>
+        <div class="flex items-center gap-2 xl:gap-6">
+            <a href="tel:88004444746" class="text-xl">8 (800) <b>444-47-46</b></a>
             <div class="flex items-center gap-2">
                 <a href="#">
-                    <svg class="icon-telegram size-12">
+                    <svg class="icon-telegram size-8 xl:size-12">
                         <use href="#icon-telegram"></use>
                     </svg>
                 </a>
                 <a href="#">
-                    <svg class="icon-whatsapp size-12">
+                    <svg class="icon-whatsapp size-8 xl:size-12">
                         <use href="#icon-whatsapp"></use>
                     </svg>
                 </a>
@@ -118,10 +118,7 @@
             </a>
         </div>
         <div class="container mb-10 grid grid-cols-12 gap-8 xl:mb-20">
-            <figure class="col-span-12 xl:order-1 xl:col-span-7">
-                <img src="./assets/img/img-driver-95d3444e.png" alt="" width="786" height="492" class="w-full rounded-[58px]" />
-            </figure>
-            <div class="xl:order-0 col-span-12 xl:col-span-5">
+            <div class="col-span-12 xl:col-span-5">
                 <div class="mb-8 text-xl uppercase xl:text-4xl">
                     <span class="text-primary">Компания</span> <br />
                     <b>Довгалев авто</b>
@@ -139,6 +136,9 @@
                     <a href="#" class="btn btn-black">Узнать больше</a>
                 </div>
             </div>
+            <figure class="col-span-12 xl:col-span-7">
+                <img src="./assets/img/img-driver-95d3444e.png" alt="" width="786" height="492" class="w-full rounded-[58px]" />
+            </figure>
         </div>
         <div class="banner banner-1 container mb-10 xl:mb-20">
             <div>
@@ -165,8 +165,8 @@
                 </div>
                 <p class="text-[23px]">Автомобили, которые мы привезли в прошлом месяце</p>
             </div>
-            <div class="scroll-container pb-20">
-                <div class="flex gap-8">
+            <div class="scroll-container pb-10 xl:pb-20">
+                <div class="flex gap-3 xl:gap-8">
                     <div class="w-[320px] overflow-hidden rounded-[57px] border border-black bg-white xl:w-[426px]">
                         <figure>
                             <img src="./assets/img/img-card-1a811026.png" loading="lazy" alt="" width="426" height="302" class="w-full" />
@@ -350,18 +350,15 @@
                 </div>
                 <p class="text-[23px]">Преимущества работы с нашей компанией</p>
             </div>
-            <div class="overflow-hidden rounded-[83px]">
-                <iframe
-                    width="100%"
-                    height="654"
-                    src="https://www.youtube.com/embed/LbSCNREFunk?si=rRj5TZR1qrCtFp_X"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                ></iframe>
-            </div>
+            <iframe
+                src="https://www.youtube.com/embed/LbSCNREFunk?si=rRj5TZR1qrCtFp_X"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                class="aspect-video w-full xl:rounded-[69px]"
+            ></iframe>
         </div>
         <div class="container mb-10 grid grid-cols-1 gap-10 xl:mb-20 xl:grid-cols-3">
             <ul class="space-y-5">
@@ -530,7 +527,7 @@
     </div>
 </footer>
 <div class="w-[920px] bg-white" style="display: none" id="callback">
-    <div class="mb-10 text-center text-4xl font-medium uppercase">Хочу такой же</div>
+    <div class="mb-10 text-center text-xl font-medium uppercase xl:text-4xl">Хочу такой же</div>
     <form action="#">
         <div class="mb-5">
             <input type="text" placeholder="Ваше имя" class="form-input w-full" aria-label="" />

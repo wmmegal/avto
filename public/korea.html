@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       <script type="module" crossorigin src="./assets/js/common-c8b1fa17.js"></script>
-      <link rel="stylesheet" href="./assets/css/common-cf2d0bcf.css">
+      <link rel="stylesheet" href="./assets/css/common-4b1f101d.css">
     </head>
     <body class="flex min-h-screen flex-col">
         <header id="header">
@@ -27,16 +27,16 @@
                 </ul>
             </div>
         </div>
-        <div class="flex items-center gap-6">
-            <a href="tel:88004444746">8 (800) <b>444-47-46</b></a>
+        <div class="flex items-center gap-2 xl:gap-6">
+            <a href="tel:88004444746" class="text-xl">8 (800) <b>444-47-46</b></a>
             <div class="flex items-center gap-2">
                 <a href="#">
-                    <svg class="icon-telegram size-12">
+                    <svg class="icon-telegram size-8 xl:size-12">
                         <use href="#icon-telegram"></use>
                     </svg>
                 </a>
                 <a href="#">
-                    <svg class="icon-whatsapp size-12">
+                    <svg class="icon-whatsapp size-8 xl:size-12">
                         <use href="#icon-whatsapp"></use>
                     </svg>
                 </a>
@@ -60,30 +60,18 @@
         </div>
         <div class="container mb-10 xl:mb-20">
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4 xl:gap-11">
-                <div class="rounded-[46px] border border-black px-6 py-7">
+                <div class="flex flex-col rounded-[46px] border border-black px-6 py-7">
                     <div class="flex h-[160px] items-center justify-center text-[0px]">
-                        <svg class="icon-search h-[132px] w-[124px]">
-                            <use href="#icon-search"></use>
+                        <svg class="icon-contract size-[117px]">
+                            <use href="#icon-contract"></use>
                         </svg>
                     </div>
                     <div class="mb-2 text-[66px] font-medium leading-[1]">1</div>
                     <p class="mb-4 text-[20px]">
-                        Найти автомобиль на сайте mobile.de или написать нам, сформировать правильно поисковой запрос,
-                        Марку/ модель/двигатель/ комплектацию
+                        Оставить нам заявку на заказ и приобретение автомобиля, марку, модель, мотор, год выпуска,
+                        цветовые предпочтения. Оплату утилизационного Сбора.
                     </p>
-                    <button type="button" class="btn btn-black w-full">Найти автомобиль</button>
-                </div>
-                <div class="rounded-[46px] border border-black px-6 py-7">
-                    <div class="flex h-[160px] items-center justify-center text-[0px]">
-                        <svg class="icon-brochure size-[110px]">
-                            <use href="#icon-brochure"></use>
-                        </svg>
-                    </div>
-                    <div class="mb-2 text-[66px] font-medium leading-[1]">2</div>
-                    <p class="mb-4 text-[20px]">
-                        Выбираем подходящие варианты, считаем стоимость автомобиля под ключ в Россию, включая таможенное
-                        оформление / птс / сбктс/ утиль сбор и доставку в ваш регион
-                    </p>
+                    <button type="button" class="btn btn-black mt-auto w-full">Найти автомобиль</button>
                 </div>
                 <div class="rounded-[46px] border border-black px-6 py-7">
                     <div class="flex h-[160px] items-center justify-center text-[0px]">
@@ -91,10 +79,20 @@
                             <use href="#icon-document"></use>
                         </svg>
                     </div>
+                    <div class="mb-2 text-[66px] font-medium leading-[1]">2</div>
+                    <p class="mb-4 text-[20px]">Заключаем договор, где прописываем нашу ответственность перед вами</p>
+                </div>
+                <div class="rounded-[46px] border border-black px-6 py-7">
+                    <div class="flex h-[160px] items-center justify-center text-[0px]">
+                        <svg class="icon-search h-[132px] w-[124px]">
+                            <use href="#icon-search"></use>
+                        </svg>
+                    </div>
                     <div class="mb-2 text-[66px] font-medium leading-[1]">3</div>
                     <p class="mb-4 text-[20px]">
-                        Заключаем договор, вносим предоплату, она является в дальнейшем задатком (в случае невозможности
-                        выполнения заказа предоплата возвращается)
+                        Подбираем автомобиль, согласно вашим требованиям, считаем автомобиль под ключ, включая
+                        таможенное оформление, получение ПТС, сбктс и оплату утили, плюс доставку до города получателя,
+                        также работаем со странами СНГ
                     </p>
                 </div>
                 <div class="rounded-[46px] border border-black px-6 py-7">
@@ -105,9 +103,34 @@
                     </div>
                     <div class="mb-2 text-[66px] font-medium leading-[1]">4</div>
                     <p class="mb-4 text-[20px]">
-                        Найденный автомобиль проверяется, запрашивается информация у дилера, также проверяем дилерские
-                        базы и страховые, запрашиваем Декру, при потребности выезжаем на осмотр лично, даем детальный
-                        отчет
+                        Выезжаем на осмотр автомобиля, делаем профессиональную проверку: осматриваем тщательно кузов,
+                        техническое состояние, производим диагностику, проверяем дилерские базы обслуживания и страховые
+                        обращения если такие имелись, высылаем клиенту наше заключение и детальный отчет по автомобилю
+                    </p>
+                </div>
+                <div class="rounded-[46px] border border-black px-6 py-7">
+                    <div class="flex h-[160px] items-center justify-center text-[0px]">
+                        <svg class="icon-clean-car size-[117px]">
+                            <use href="#icon-clean-car"></use>
+                        </svg>
+                    </div>
+                    <div class="mb-2 text-[66px] font-medium leading-[1]">5</div>
+                    <p class="mb-4 text-[20px]">
+                        Выкупаем автомобиль (все денежные переводы лежат на наших плечах и нашей материальной
+                        ответственности. Наши клиенты производят расчет с нами в рублях для их удобства (существуют и
+                        другие формы оплаты)
+                    </p>
+                </div>
+                <div class="rounded-[46px] border border-black px-6 py-7">
+                    <div class="flex h-[160px] items-center justify-center text-[0px]">
+                        <svg class="icon-approve size-[121px]">
+                            <use href="#icon-approve"></use>
+                        </svg>
+                    </div>
+                    <div class="mb-2 text-[66px] font-medium leading-[1]">6</div>
+                    <p class="mb-4 text-[20px]">
+                        Оформляем все экспортные документы и отправляем автомобиль в Россию. важно: мы не перевозим
+                        автомобили балкерами на палубе, а осуществляем доставку современными паромами в трюме.
                     </p>
                 </div>
                 <div class="rounded-[46px] border border-black px-6 py-7">
@@ -116,48 +139,28 @@
                             <use href="#icon-shipping"></use>
                         </svg>
                     </div>
-                    <div class="mb-2 text-[66px] font-medium leading-[1]">5</div>
-                    <p class="mb-4 text-[20px]">
-                        Найденный автомобиль проверяется, запрашивается информация у дилера, также проверяем дилерские
-                        базы и страховые, запрашиваем Декру, при потребности выезжаем на осмотр лично, даем детальный
-                        отчет
-                    </p>
-                </div>
-                <div class="rounded-[46px] border border-black px-6 py-7">
-                    <div class="flex h-[160px] items-center justify-center text-[0px]">
-                        <svg class="icon-contract size-[117px]">
-                            <use href="#icon-contract"></use>
-                        </svg>
-                    </div>
-                    <div class="mb-2 text-[66px] font-medium leading-[1]">6</div>
-                    <p class="mb-4 text-[20px]">
-                        По прибытию в Россию делаем процедуру таможенной очистки, оформляем птс, оплачиваем
-                        утилизационный сбор (возможно таможенное оформление в республике Беларусь, если это имеет смысл)
-                    </p>
-                </div>
-                <div class="rounded-[46px] border border-black px-6 py-7">
-                    <div class="flex h-[160px] items-center justify-center text-[0px]">
-                        <img src="./assets/img/clean-car-2-0dca9702.png" alt="" width="136" height="128" loading="lazy" />
-                    </div>
                     <div class="mb-2 text-[66px] font-medium leading-[1]">7</div>
                     <p class="mb-4 text-[20px]">
-                        По прибытию тщательно проверяем автомобиль в нашем партнерском тех.центре и делаем предпродажную
-                        подготовку в детейлинге
+                        Проходим процедуру таможенной очистки в городе Владивосток, лично забираем на эвакуаторах
+                        автомобили с территории таможни, перевозим в лабораторию, везем в лабораторию, проходим
+                        процедуру оформления птс, сбктс, оплачиваем утилизационный сбор.
                     </p>
                 </div>
                 <div class="flex flex-col rounded-[46px] border border-black px-6 py-7">
                     <div class="flex h-[160px] items-center justify-center text-[0px]">
-                        <svg class="icon-clean-car size-[117px]">
-                            <use href="#icon-clean-car"></use>
+                        <svg class="icon-world-map size-[137px]">
+                            <use href="#icon-world-map"></use>
                         </svg>
                     </div>
                     <div class="mb-2 text-[66px] font-medium leading-[1]">8</div>
                     <p class="mb-4 text-[20px]">
-                        Вручаем автомобиль нашим клиентам и даем гарантию 5000км или 2 месяца
+                        Передаем автомобиль нашим партнерам в транспортную компанию, которая доставит автомобиль в любой
+                        уголок нашей страны, а также стран СНГ
                     </p>
                     <button type="button" class="btn btn-black mt-auto w-full">Найти автомобиль</button>
                 </div>
             </div>
+            <div class="info mt-5 xl:mt-10">Важно! Автомобиль застрахован на всех этапах перевозки</div>
         </div>
         <div class="container mb-10 xl:mb-20">
             <div class="mb-6 text-center xl:mb-12">
@@ -456,7 +459,7 @@
     </div>
 </footer>
 <div class="w-[920px] bg-white" style="display: none" id="callback">
-    <div class="mb-10 text-center text-4xl font-medium uppercase">Хочу такой же</div>
+    <div class="mb-10 text-center text-xl font-medium uppercase xl:text-4xl">Хочу такой же</div>
     <form action="#">
         <div class="mb-5">
             <input type="text" placeholder="Ваше имя" class="form-input w-full" aria-label="" />
